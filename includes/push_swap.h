@@ -24,7 +24,15 @@ typedef struct s_stack
 	int				index;
 	struct s_stack	*next;
 }	t_stack;
-
+//PARSING
+t_stack	*parse_args(int argc, char **argv);
+int		check_duplicates (t_stack *stack);
+int		is_sorted(t_stack *stack);
+//STACK OPERATIONS
+t_stack	*stack_new(int value);
+void	stack_add_back(t_stack **stack, t_stack *new);
+void	stack_clear(t_stack **stack);
+int		stack_size(t_stack *stack);
 //OPERATIONS
 void	sa(t_stack **a, int print);
 void	sb(t_stack **b, int print);
@@ -37,13 +45,15 @@ void	rr(t_stack **a, t_stack **b, int print);
 void	rra(t_stack **a, int print);
 void	rrb(t_stack **b, int print);
 void	rrr(t_stack **a, t_stack **b, int print);
+//SORTING
+void	sort_stack(t_stack **a, t_stack **b);
+void	sort_three(t_stack **a);
+void	sort_five(t_stack **a, t_stack **b);
+void	sort_big(t_stack **a, t_stack **b);
 //UTILS
-t_stack	*stack_new(int value);
-void	stack_add_back(t_stack **stack, t_stack *new);
-void	stack_clear(t_stack **stack);
-int		stack_size(t_stack *stack);
 void	assign_indexes(t_stack *stack);
 int		get_min_index(t_stack *stack);
 int		get_max_index(t_stack *stack);
 int		get_position(t_stack *stack, int index);
+void	rotate_to_top(t_stack **stack, int position, char stack_name);
 #endif
