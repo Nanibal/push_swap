@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 #include "../includes/push_swap.h"
 
-static int is_valid_number(char *str)
+static int	is_valid_number(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (str[i] == '-' || str[i] == '+')
@@ -48,7 +48,7 @@ static long	ft_atol(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		result = result *10 + (str[i] - '0');
+		result = result * 10 + (str[i] - '0');
 		i++;
 	}
 	return (result * sign);
@@ -57,7 +57,7 @@ static long	ft_atol(const char *str)
 t_stack	*parse_args(int argc, char **argv)
 {
 	t_stack	*stack;
-	long 	num;
+	long	num;
 	int		i;
 
 	stack = NULL;
@@ -77,7 +77,7 @@ t_stack	*parse_args(int argc, char **argv)
 	return (stack);
 }
 
-int	check_duplicates (t_stack *stack)
+int	check_duplicates(t_stack *stack)
 {
 	t_stack	*current;
 	t_stack	*runner;

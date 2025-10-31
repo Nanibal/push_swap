@@ -64,8 +64,6 @@ void	sort_big(t_stack **a, t_stack **b)
 		chunk_num++;
 	}
 	while (*a)
-	{
 		pb(a, b, 1);
-		push_back_to_a(a, b);
-	}
+	push_back_to_a(a, b);
 }

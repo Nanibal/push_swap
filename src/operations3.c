@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 #include "../includes/push_swap.h"
 
-
 void	rra(t_stack **a, int print)
 {
 	t_stack	*last;
@@ -32,7 +31,6 @@ void	rra(t_stack **a, int print)
 	if (print)
 		write(1, "rra\n", 4);
 }
-
 
 void	rrb(t_stack **b, int print)
 {

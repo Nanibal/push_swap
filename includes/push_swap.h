@@ -12,11 +12,10 @@
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
-
-#include "../libft/libft.h"
-#include <stdlib.h>
-#include <unistd.h>
-#include <limits.h>
+# include "../libft/libft.h"
+# include <stdlib.h>
+# include <unistd.h>
+# include <limits.h>
 
 typedef struct s_stack
 {
@@ -26,7 +25,7 @@ typedef struct s_stack
 }	t_stack;
 //PARSING
 t_stack	*parse_args(int argc, char **argv);
-int		check_duplicates (t_stack *stack);
+int		check_duplicates(t_stack *stack);
 int		is_sorted(t_stack *stack);
 //STACK OPERATIONS
 t_stack	*stack_new(int value);

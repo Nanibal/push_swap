@@ -54,38 +54,6 @@ int	get_position(t_stack *stack, int index)
 	return (-1);
 }
 
-void	rotate_to_top(t_stack **stack, int position, char stack_name)
-{
-	int	size;
-	int	i;
-
-	size = stack_size(*stack);
-	if (position <= size / 2)
-	{
-		i = 0;
-		while (i < position)
-		{
-			if (stack_name == 'a')
-				ra(stack, 1);
-			else
-				rb(stack, 1);
-			i++;
-		}
-	}
-	else
-	{
-		i = 0;
-		while (i < size - position)
-		{
-			if (stack_name == 'a')
-				rra(stack, 1);
-			else
-				rrb(stack, 1);
-			i++;
-		}
-	}
-}
-
 void	sort_stack(t_stack **a, t_stack **b)
 {
 	int	size;

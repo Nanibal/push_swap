@@ -15,7 +15,7 @@ t_stack	*stack_new(int value)
 {
 	t_stack	*new;
 
-	new = (t_stack*)malloc(sizeof(t_stack));
+	new = (t_stack *)malloc(sizeof(t_stack));
 	if (!new)
 		return (NULL);
 	new->value = value;
@@ -67,7 +67,7 @@ int	stack_size(t_stack *stack)
 void	assign_indexes(t_stack *stack)
 {
 	t_stack	*current;
-	t_stack *runner;
+	t_stack	*runner;
 	int		index;
 
 	current = stack;

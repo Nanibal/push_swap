@@ -15,7 +15,7 @@ void	sa(t_stack **a, int print)
 {
 	t_stack	*tmp;
 
-	if(!*a || !(*a)->next)
+	if (!*a || !(*a)->next)
 		return ;
 	tmp = *a;
 	*a = (*a)->next;
@@ -49,7 +49,7 @@ void	ss(t_stack **a, t_stack **b, int print)
 
 void	pa(t_stack **a, t_stack **b, int print)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	if (!*b)
 		return ;
@@ -63,9 +63,9 @@ void	pa(t_stack **a, t_stack **b, int print)
 
 void	pb(t_stack **a, t_stack **b, int print)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
-	if(!*a)
+	if (!*a)
 		return ;
 	tmp = *a;
 	*a = (*a)->next;
