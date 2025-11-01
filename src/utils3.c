@@ -55,3 +55,36 @@ void	rotate_to_top(t_stack **stack, int position, char stack_name)
 		rotate_backward(stack, size - position, stack_name);
 	}
 }
+
+/*void	rotate_to_top(t_stack **stack, int position, char stack_name)
+{
+	int	size;
+	int	moves;
+
+	size = stack_size(*stack);
+	if (position == 0)
+		return;
+		
+	if (position <= size / 2)
+	{
+		moves = position;
+		while (moves-- > 0)
+		{
+			if (stack_name == 'a')
+				ra(stack, 1);
+			else
+				rb(stack, 1);
+		}
+	}
+	else
+	{
+		moves = size - position;
+		while (moves-- > 0)
+		{
+			if (stack_name == 'a')
+				rra(stack, 1);
+			else
+				rrb(stack, 1);
+		}
+	}
+}*/
